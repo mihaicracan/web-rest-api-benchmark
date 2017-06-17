@@ -10,14 +10,14 @@ class Controller extends BaseController
 {
     public function index() 
     {
-    	return response()->json(['Hello' => 'World']);
+    	return response()->json(['hello' => 'world']);
     }
 
     public function compute()
     {
     	$x = 0; $y = 1; $sum = 0;
 
-    	for($i = 0; $i <= 1000000; $i++)
+    	for ($i = 0; $i <= 1000000; $i++)
     	{
     	    $z = $x + $y;
     	    $x = $y;
