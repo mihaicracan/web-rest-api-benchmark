@@ -41,7 +41,8 @@ class Controller extends BaseController
     	$data = User::whereHas('countries', function($query) {
     					$query->where('name', 'France');
     				})
-    				->with('countries')
+    				->has('countries', '>=', 5)
+    				->withCount('countries')
     				->get();
 
     	return response()->json(['data' => $data]);
