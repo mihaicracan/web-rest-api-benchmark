@@ -15,15 +15,13 @@ class Controller extends BaseController
 
     public function compute()
     {
-    	$x = 0; $y = 1; $sum = 0;
+    	$x = 0; $y = 1;
 
     	for ($i = 0; $i <= 1000000; $i++)
     	{
     	    $z = $x + $y;
     	    $x = $y;
     	    $y = $z;
-
-    	    $sum += $z;
     	}
 
     	return response()->json(['status' => 'done']);

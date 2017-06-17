@@ -8,14 +8,12 @@ class Controller
 	}
 
 	compute(req, res) {
-		let x = 0, y = 1, sum = 0;
+		let x = 0, y = 1;
 
 		for (let i = 0; i <= 1000000; i++) {
 		    let z = x + y;
 		    x = y;
 		    y = z;
-
-		    sum += z;
 		}
 
 		return res.json({ status: 'done' })
