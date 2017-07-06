@@ -10,7 +10,7 @@ class Controller
 	compute(req, res) {
 		let x = 0, y = 1;
 
-		let max = 1000000 + Math.random() * 50000;
+		let max = 10000 + Math.random() * 500;
 
 		for (let i = 0; i <= max; i++) {
 		    let z = x + y;

@@ -37,7 +37,7 @@ public class Controller {
         long x = 0, y = 1, z, max;
         
         Random r = new Random();
-        max = 1000000 + r.nextInt(50000);
+        max = 10000 + r.nextInt(500);
         
         for (int i = 0; i <= max; i++) {
         	z = x + y;

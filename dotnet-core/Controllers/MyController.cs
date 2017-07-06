@@ -32,7 +32,7 @@ namespace dotnet_core.Controllers
             int x = 0, y = 1, z, max;
 
             Random r = new Random();
-            max = 1000000 + r.Next(50000);
+            max = 10000 + r.Next(500);
 
             for (int i = 0; i <= max; i++) {
                 z = x + y;

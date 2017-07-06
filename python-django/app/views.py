@@ -11,7 +11,7 @@ def compute(req):
 	x = 0
 	y = 1
 
-	max = 1000000 + randint(0, 50000)
+	max = 10000 + randint(0, 500)
 
 	for i in range(max):
 		z = x + y

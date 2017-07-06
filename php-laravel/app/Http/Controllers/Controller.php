@@ -17,7 +17,7 @@ class Controller extends BaseController
     {
     	$x = 0; $y = 1;
 
-        $max = 1000000 + rand(0, 50000);
+        $max = 10000 + rand(0, 500);
 
     	for ($i = 0; $i <= $max; $i++) {
     	    $z = $x + $y;
