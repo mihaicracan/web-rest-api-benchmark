@@ -87,7 +87,7 @@
 	                    </goals>
 	                    <phase>package</phase>
 	                    <configuration>
-	                        <path>/standalone</path>
+	                        <path>standalone</path>
 	                        <enableNaming>false</enableNaming>
 	                        <finalName>standalone.jar</finalName>
 	                        <charset>utf-8</charset>
