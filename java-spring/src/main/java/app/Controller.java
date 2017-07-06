@@ -27,7 +27,7 @@ public class Controller {
         this.sessionFactory = sessionFactory;
     }
 
-    @RequestMapping(value = "/", produces = "application/json")
+    @RequestMapping(value = "/hello", produces = "application/json")
     public String hello() throws JSONException {
         return new JSONObject().put("hello", "world").toString();
     }
