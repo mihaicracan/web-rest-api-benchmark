@@ -14,25 +14,25 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "USER")
+@Table(name = "User")
 public class User {
 	
 	@Id
 	private int id;
 	
-	@Column(name ="FIRSTNAME", nullable = false)
+	@Column(name ="firstName", nullable = false)
     private String firstName;
 	
-	@Column(name ="LASTNAME", nullable = false)
+	@Column(name ="lastname", nullable = false)
     private String lastName;
 	
-	@Column(name ="EMAIL", nullable = false)
+	@Column(name ="email", nullable = false)
     private String email;
 	
 	@ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "USERCOUNTRYMAPPING", 
-         joinColumns = @JoinColumn(name = "USERID"),
-         inverseJoinColumns = @JoinColumn(name = "COUNTRYID"))
+    @JoinTable(name = "UserCountryMapping", 
+         joinColumns = @JoinColumn(name = "userId"),
+         inverseJoinColumns = @JoinColumn(name = "countryId"))
 	Set<Country> countries = new HashSet<Country>(0);
     
 	public int getId() {
