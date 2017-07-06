@@ -1,8 +1,9 @@
 from django.http import JsonResponse
+from random import randint
 from models import Country, User, UserSerializer, CountrySerializer
 
 
-def index(req):
+def hello(req):
 	return JsonResponse({ 'hello': 'world' })
 
 
@@ -10,7 +11,9 @@ def compute(req):
 	x = 0
 	y = 1
 
-	for i in range(1000000):
+	max = 1000000 + randint(0, 50000)
+
+	for i in range(max):
 		z = x + y
 		x = y
 		y = z
