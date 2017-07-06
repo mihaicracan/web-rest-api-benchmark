@@ -12,11 +12,3 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-Route::get('/', 'Controller@index');
-
-Route::get('/compute', 'Controller@compute');
-
-Route::get('/countries', 'Controller@countries');
-
-Route::get('/users', 'Controller@users');
