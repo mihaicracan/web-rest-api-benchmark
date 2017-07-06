@@ -36,3 +36,6 @@ overridedb.*
 .factorypath
 dump.rdb
 transaction-logs
+
+# Allow
+!.mvn/wrapper/maven-wrapper.jar
