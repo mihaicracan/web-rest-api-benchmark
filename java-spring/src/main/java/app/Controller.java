@@ -28,7 +28,7 @@ public class Controller {
     }
 
     @RequestMapping(value = "/", produces = "application/json")
-    public String index() throws JSONException {
+    public String hello() throws JSONException {
         return new JSONObject().put("hello", "world").toString();
     }
     

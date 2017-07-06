@@ -36,3 +36,6 @@ overridedb.*
 .factorypath
 dump.rdb
 transaction-logs
+
+# Allow
+!application.jar
