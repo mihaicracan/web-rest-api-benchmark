@@ -3,14 +3,16 @@ const User = require('../Models/User');
 
 class Controller 
 {
-	index(req, res) {
-		return res.json({ hello: 'world' })
+	hello(req, res) {
+		return res.json({ hello: 'world' });
 	}
 
 	compute(req, res) {
 		let x = 0, y = 1;
 
-		for (let i = 0; i <= 1000000; i++) {
+		let max = 1000000 + Math.random() * 50000;
+
+		for (let i = 0; i <= max; i++) {
 		    let z = x + y;
 		    x = y;
 		    y = z;
