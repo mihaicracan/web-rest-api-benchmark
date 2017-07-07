@@ -19,7 +19,7 @@ namespace dotnet_core.Controllers
         } 
 
         [HttpGet]
-        [Route("/")]
+        [Route("/hello")]
         public IEnumerable<string> hello()
         {
             return new string[] { "hello", "world" };
