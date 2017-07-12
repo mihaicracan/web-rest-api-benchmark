@@ -11,4 +11,4 @@
 |
 */
 
-$app->get('/hello', 'App\Http\Controllers\Controller@hello');
+$app->get('/hello', 'Controller@hello');
