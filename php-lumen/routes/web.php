@@ -12,3 +12,6 @@
 */
 
 $app->get('/hello', 'Controller@hello');
+$app->get('/compute', 'Controller@compute');
+$app->get('/countries', 'Controller@countries');
+$app->get('/users', 'Controller@users');
